@@ -3,7 +3,7 @@ import math
 
 import requests
 
-def recommend_games_from_github(
+def recommend_games_from_metacritic(
     user_age=18,
     platform_filter=None,
     preferred_publishers=None,
@@ -77,12 +77,12 @@ def recommend_games_from_github(
     return ranked[:top_n]
 
 if __name__ == "__main__":
-    recommendations = recommend_games_from_github(
+    recommendations = recommend_games_from_metacritic(
         user_age=16,
         platform_filter="Nintendo Switch",
         preferred_publishers=["Nintendo"],
         preferred_developers=["Nintendo"],
-        preferred_genres=["Open-World Action", "3D Platformer"],
+        preferred_genres=["Open-World Action"],
         prefer_critic_over_user=False
     )
 

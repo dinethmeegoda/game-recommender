@@ -135,6 +135,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+/nets150/
 
 # Spyder project settings
 .spyderproject
