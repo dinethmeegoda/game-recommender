@@ -122,7 +122,8 @@ class GameRecommenderUI(QWidget):
             platforms = ", ".join(game["platforms"]) if game.get(
                 "platforms") else "N/A"
             self.results_area.append(
-                f"{title} — Score: {score}\nPlatforms: {platforms}\n\n")
+                f"{title} — Recommendation Score: {score}\nPlatforms:"
+                f" {platforms}\n\n")
 
 
 if __name__ == "__main__":
